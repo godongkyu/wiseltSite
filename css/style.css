@@ -1,0 +1,428 @@
+@charset "UTF-8";
+:root {
+  --content-width: 1320px;
+}
+/* 공통 ui */
+a.common-btn {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  color: #dedec3;
+  line-height: 60px;
+  border-radius: 5px;
+  background: #74751e;
+  text-align: center;
+  opacity: 0.6;
+}
+/* 메인배너 */
+#mainbanner {
+  background-image: url('../img/car1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+#mainbanner strong {
+  color: #dedec3;
+}
+
+#mainbanner .inner {
+  position: relative;
+  width: var(--content-width);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#mainbanner .maintext {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  min-height: 254px;
+  top: calc(50% - 207px);
+}
+/* 메인 배너 메인 타이틀 */
+#mainbanner .maintext p {
+  color: #333333;
+}
+
+#mainbanner .maintext p.maintitle {
+  font-size: 50px;
+  line-height: 60px;
+    color: #666666;
+}
+/* 메인 배너 서브 타이틀 */
+#mainbanner .maintext p.subtitle {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #666666;
+}
+
+#mainbanner .maintext a.common-btn {
+  margin-top: 40px;
+}
+/* 상단 고정형 메뉴 */
+#wrap {
+  width: var(--content-width);
+  margin: 0 auto;
+  background: #f1f1f1;
+}
+
+#logo {float: left;}
+
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: rgba(244, 244, 244, 0.8);
+}
+#header ul {
+  font-size: 19px;
+  font-weight: 600;
+}
+#header ul a{
+  color: #74751e;
+}
+#header .h-inner {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding: 45px 25px  45px
+}
+
+#header .inner { float : right; }
+
+#header .inner > ul {
+  overflow: hidden;
+  float: left;
+}
+
+#header .inner > ul li{
+  float: left;
+  height: 20px;
+}
+
+#header .inner > ul > li a{
+  line-height: 20px;
+}
+
+#header .inner #login-menu li span.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  float: right;
+  height: 18px;
+  font-size: 14px;
+  color: white;
+  border-radius: 100%;
+  background: #ffc01d;
+  margin-left: 4px;
+}
+
+#header .inner #gnb {
+  margin-right: 103px;
+}
+
+#header .inner #gnb li {
+  margin-left: 47px;
+}
+
+#header .inner #gnb li:first-child {
+  margin-left: 0px;
+}
+
+#header .inner #login-menu li {
+  margin-left: 30px;
+}
+
+#header .inner #login-menu li:first-child {
+  margin-left: 0px;
+}
+/* 중복되는 부분은 같이 가능 */
+/* #header .inner #gnb li:first-child, #header .inner #login-menu li:first-child { margin-left: 0px; } */
+
+/* content 영역 */
+#container section .inner {
+  width: var(--content-width);
+  min-height: 650px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  /* font-size: 50px;
+  color: white; */
+}
+
+#container section .inner h2 {
+  font-size: 45px;
+  line-height: 1;
+  color: #dedec3;
+  margin-top: 100px;
+}
+#containr #second .inner {
+  background: linear-gradient( #0f1052, #d3df09 );
+}
+/* #container section:nth-child(even) .inner {
+  background: blue;
+}
+
+#container section:nth-child(odd) .inner {
+  background: green;
+} */
+
+#container section:nth-child(1) .inner {
+  background: linear-gradient( #0f1052, #d3df09 );
+  padding-top: 90px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#container section:nth-child(2) {
+  background: linear-gradient( #d3df09, #0f1052 );
+}
+
+#container section:nth-child(2) .inner {
+  min-height: 652px;
+  padding-top: 146px;
+  box-sizing: border-box;
+}
+/* 네번째 섹션 */
+/* #container section:nth-child(4) {
+  background: linear-gradient( #0f1052, #d3df09 );
+  background-image: url("./img/asd.png");
+  background-repeat: no-repeat;
+  background-size: auto; 100%;
+  background-position: center; */
+}
+/* calc(50% + 643px) */
+/* #container section:nth-child(4) .inner .box .text-box{
+  margin-top: 165px;
+  padding-left: 52px;
+  float: left;
+} */
+
+/*새로운 네번째*/
+#container section:nth-child(4) {
+  background: linear-gradient( #0f1052, #d3df09 );
+}
+/* 다섯번째 섹션 */
+#container section:nth-child(5) {
+  background: #1d314a;
+}
+
+#container section:nth-child(5) .inner .box .text-box {
+  margin-top: 227px;
+}
+
+#container section .inner .tit {
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #dedec3;
+}
+#container section .inner .txt {
+  color: #dedec3;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+#container section .inner .box-wrap {
+  overflow: hidden;
+  padding: 0 100px;
+}
+
+#container section .inner .box-wrap li {
+  float: left;
+  width: 33.333%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#container section .inner .box-wrap li .items {
+  border: 1px solid #black;
+  padding: 45px 0;
+  min-height: 270px;
+  box-sizing: border-box;
+  float: right;
+}
+
+#container section .inner .box-wrap li .items h3 {
+  font-size: 20px;
+  line-height: 1;
+  color: #252525;
+}
+
+#container section .inner .box-wrap li .items p {
+  line-height: 24px;
+  margin-top: 30px;
+  padding: 0 50px;
+  color: #252525;
+}
+
+#container section .inner .box-wrap li .items img {
+  margin-top: 32px;
+}
+#container section .inner .box-wrap .box-center {
+  overflow: hidden;
+  position: relative;
+  margin-right: 50px;
+}
+/* 제휴회사 layout */
+
+#container section .inner .subtitle {
+  margin-top: 21px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #dedec3;
+}
+#container section .inner .review {
+  margin-top: 20px;
+  font-size: 19px;
+  color: #dedec3;
+}
+
+#container section .inner .thumb-img-wrap {
+  text-align: center; /* 자식요소 ul을 가운데 정렬하겠다.*/
+}
+
+#container section .inner .thumb-img-wrap ul {
+  display: inline-block; /*자식요소 li의 컨텐츠 크기만큼 넓이가 지정된다*/
+}
+
+#container section .inner .thumb-img-wrap ul:nth-child(1) {
+  margin-top: 75px;
+}
+
+#container section .inner .thumb-img-wrap ul:nth-child(2) {
+  margin-top: 80px;
+}
+
+#container section .inner .thumb-img-wrap ul li{
+  display: inline-block;
+  float: left;
+  width: 16.666%;
+}
+
+#container section .inner .thumb-img-wrap ul li a img{
+  width: 100%; /*이미지가 초기값 220px 이상 또는 이하로 변경시 li의 %기준으로 변경*/
+}
+
+/* 공통 section style */
+
+#container section .inner .box {
+  float: left;
+  width: 50%;
+  min-height: 650px;
+}
+
+#container section:nth-child(3) .inner .box.img {
+  background-size: cover;
+  background-image: url("../img/section_3/bg_img.png");
+}
+
+#container section:nth-child(3) .inner .box.img {
+  background-image: url("../img/section_3/bg_img.png");
+}
+
+#container section:nth-child(5) .inner .box.img {
+  background-image: url("../img/section_5/bg_img.png");
+}
+
+#container section:nth-child(5) .inner .box.img {
+  background-image: url("../img/section_5/bg_img.png");
+}
+
+#container section .inner .box .text-box{
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 85px;
+  padding-left: 168px;
+}
+
+#container section .inner .box .text-box a.common-btn{
+  margin-top: 43px;
+}
+
+#container section .inner .box .text-box h2 .light-text {
+  font-weight: 300;
+}
+
+/*하단 영역*/
+#footer {
+  background: #eeeeee;
+}
+
+#footer .inner {
+  position: relative;
+  width: var(--content-width);
+  height: 250px;
+  padding: 50px 20px 0;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#footer .inner .f-box {
+  float: left;
+}
+#footer .inner .f-box:nth-child(2) {
+  padding-left: 75px;
+}
+/*site menu*/
+#footer .inner .f-box ul {
+  overflow: hidden;
+}
+#footer .inner .f-box ul li {
+  float: left;
+  height: 20px;
+  margin-left: 40px;
+}
+#footer .inner .f-box ul li:first-child{
+  margin-left: 0;
+}
+#footer .inner .f-box ul li a {
+  line-height: 20px;
+  color: #333333; /*#333*/
+}
+
+#footer .inner .f-box .tel {
+  margin-top: 17px;
+  font-weight: 900;
+  line-height: 1;
+  color: #333333;
+}
+#footer .inner .f-box .tel a {
+  color: #333333;
+}
+#footer .inner .f-box .copyright {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #888;
+  font-weight: 300;
+}
+
+#familysite {
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  top: 40px;
+  right: 20px;
+  padding: 0 30px 0 15px;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  outline: none;
+  appearance: none; /*기존 arrow image 삭제*/
+  background-image: url('../img/select_box_arrow.png');
+  background-repeat: no-repeat;
+  background-position: calc( 100% - 11px ) center;
+}
+
+#familysite:focus {
+  border: 1px solid #d9d9d9;
+}
+#footer .inner .f-box ul li:nth-child(1) {
+  font-weight: 600;
+  color: #004eff;
+}
